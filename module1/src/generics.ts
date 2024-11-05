@@ -18,8 +18,11 @@ const booleanArray : GenericsArraye3<boolean>=[true,false];
 
 
 // array of Objects 
-
-const  user:GenericsArray1<{name:string;age:number}> = [
+interface user {
+    name:string,
+    age:number,
+}
+const  user:GenericsArray1<user> = [
 {
 name: "amit",
 age:29,
